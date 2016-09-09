@@ -23,6 +23,10 @@ function Server(options) {
             console.log(data)
         })
 
+        socket.on('login', function(data) {
+            console.log("User trying to login : " + data.user_name)
+        })
+
         socket.on('event', function(data){
 
         });
